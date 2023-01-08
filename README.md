@@ -3,6 +3,8 @@
 
 <h1> About 🙂 </h1>
 <img width="300px" src="https://github.com/Collinsoden22/Collinsoden22/blob/master/assets/img/Collins.jpg" />
+<img width="300px" src="https://github.com/Collinsoden22/Collinsoden22/blob/master/assets/img/Se.png" />
+
 
 My Name is [Collins Oden](https://procodes.tech/). I am a tech enthusiast, a software engineer with interest in technology and innovations. 
 My strongest skills are organization, written and verbal communication, problem solving, 
