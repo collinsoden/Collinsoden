@@ -1,12 +1,12 @@
-<img src="https://github.com/Collinsoden22/Collinsoden22/blob/master/ineedajob.png"/>
+<!-- <img src="https://github.com/Collinsoden22/Collinsoden22/blob/master/ineedajob.png"/> -->
+<h1> C O L L I N S  &nbsp; O D E N </h1>
 <br />
 
 <h1> About 🙂 </h1>
 <div align="center">
 <p>
 <img width="150px" src="https://github.com/Collinsoden22/Collinsoden22/blob/master/assets/img/Collins.jpg" />
-<!-- <img width="150px" src="https://github.com/Collinsoden22/Collinsoden22/blob/master/assets/img/Se.png" /> -->
-  # ** C O L L I N S **
+<img width="150px" src="https://github.com/Collinsoden22/Collinsoden22/blob/master/assets/img/Se.png" />
 </div>
 
 My Name is [Collins Oden](https://procodes.tech/). I am a tech enthusiast, a software engineer with interest in technology and innovations. 
