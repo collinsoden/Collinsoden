@@ -27,8 +27,8 @@ mindedness while always seeking a solution to any challenge presented. I am open
   <img alt="Javascript" src="https://img.shields.io/badge/-Javascript-2088FF/?style=flat&logo=javascript&logoColor=yellow" />
   <img alt="LinkedIn" src="https://img.shields.io/badge/-LinkedIn-2088BB/?style=flat&logo=linkedin&logoColor=blue" />
   <img alt="VS Code" src="https://img.shields.io/badge/-VS_Code-F05032?style=flat-square&logo=visualstudiocode&logoColor=white" />
-  <img alt="Flutter" src="https://img.shields.io/badge/-Flutter-2088FF?style=flat-square&logo=flutter&logoColor=white" /> 
-  <img alt="Dart" src="https://img.shields.io/badge/-Dart-2088FF?style=flat-square&logo=dart&logoColor=white" /> 
+  <img alt="Python" src="https://img.shields.io/badge/-Python-2088FF?style=flat-square&logo=python&logoColor=white" /> 
+  <img alt="Django" src="https://img.shields.io/badge/-Django-2088FF?style=flat-square&logo=django&logoColor=white" /> 
   <img alt="Linux" src="https://img.shields.io/badge/-Linux-A05032?style=flat-square&logo=linux&logoColor=white"/> 
   <img alt="Chrome" src="https://img.shields.io/badge/-Chrome-yellow?style=flat-square&logo=googlechrome&logoColor=white"/> 
 </p>
