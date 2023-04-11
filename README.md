@@ -1,5 +1,5 @@
 <!-- <img src="https://github.com/Collinsoden22/Collinsoden22/blob/master/ineedajob.png"/> -->
-<h1> C O L L I N S  &nbsp; O D E N </h1>
+<h1 align="center"> C O L L I N S  &nbsp; O D E N </h1>
 <br />
 
 <h1> About 🙂 </h1>
