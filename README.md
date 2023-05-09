@@ -30,6 +30,7 @@ mindedness while always seeking a solution to any challenge presented. I am open
   <img alt="Python" src="https://img.shields.io/badge/-Python-2088FF?style=flat-square&logo=python&logoColor=white" /> 
   <img alt="Django" src="https://img.shields.io/badge/-Django-2088FF?style=flat-square&logo=django&logoColor=white" /> 
   <img alt="Linux" src="https://img.shields.io/badge/-Linux-A05032?style=flat-square&logo=linux&logoColor=white"/> 
+  <img alt="Express JS" src="https://img.shields.io/badge/-ExpressJS-46a2f1/?style=flat&logo=expressjs&logoColor=yellow" />
   <img alt="Chrome" src="https://img.shields.io/badge/-Chrome-yellow?style=flat-square&logo=googlechrome&logoColor=white"/> 
 </p>
  </div>
