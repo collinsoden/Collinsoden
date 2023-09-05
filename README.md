@@ -20,16 +20,15 @@ mindedness while always seeking a solution to any challenge presented. I am open
   <img alt="git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />  
   <img alt="Docker" src="https://img.shields.io/badge/-Docker-46a2f1?style=flat-square&logo=docker&logoColor=white" />
   <img alt="github actions" src="https://img.shields.io/badge/-Github_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white" />
-  <img alt="html5" src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
+  <img alt="NodeJs" src="https://img.shields.io/badge/-NODEJS-2088BB/?style=flat&logo=Node.Js&logoColor=blue" />
+  <img alt="Express JS" src="https://img.shields.io/badge/-ExpressJS-46a2f1/?style=flat&logo=Express&logoColor=yellow" />
   <img alt="PHP" src="https://img.shields.io/badge/-PHP-002232/?style=flat&logo=php&logoColor=white" />
   <img alt="MySQL" src="https://img.shields.io/badge/-MySQL-46a2f1/?style=flat&logo=mysql&logoColor=orange" />
   <img alt="Javascript" src="https://img.shields.io/badge/-Javascript-2088FF/?style=flat&logo=javascript&logoColor=yellow" />
   <img alt="LinkedIn" src="https://img.shields.io/badge/-LinkedIn-2088BB/?style=flat&logo=linkedin&logoColor=blue" />
   <img alt="VS Code" src="https://img.shields.io/badge/-VS_Code-F05032?style=flat-square&logo=visualstudiocode&logoColor=white" />
   <img alt="Python" src="https://img.shields.io/badge/-Python-2088FF?style=flat-square&logo=python&logoColor=white" /> 
-  <img alt="Django" src="https://img.shields.io/badge/-Django-2088FF?style=flat-square&logo=django&logoColor=white" /> 
   <img alt="Linux" src="https://img.shields.io/badge/-Linux-A05032?style=flat-square&logo=linux&logoColor=white"/> 
-  <img alt="Express JS" src="https://img.shields.io/badge/-ExpressJS-46a2f1/?style=flat&logo=expressjs&logoColor=yellow" />
   <img alt="Chrome" src="https://img.shields.io/badge/-Chrome-yellow?style=flat-square&logo=googlechrome&logoColor=white"/> 
 </p>
  </div>
