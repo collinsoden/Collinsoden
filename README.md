@@ -5,8 +5,7 @@
 <h1> About 🙂 </h1>
 <div align="center">
 <p>
-<img width="150px" src="https://github.com/Collinsoden22/Collinsoden22/blob/master/assets/img/Collins.jpg" />
-<img width="150px" src="https://github.com/Collinsoden22/Collinsoden22/blob/master/assets/img/Se.png" />
+<img width="100%" src="https://github.com/Collinsoden22/Collinsoden22/blob/master/assets/img/Collins-Oden_Cover.png" />
 </div>
 
 My Name is [Collins Oden](https://procodes.tech/). I am a tech enthusiast, a software engineer with interest in technology and innovations. 
