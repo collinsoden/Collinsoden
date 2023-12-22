@@ -30,8 +30,8 @@ mindedness while always seeking a solution to any challenge presented. I am open
   <img alt="Python" src="https://img.shields.io/badge/-Python-2088FF?style=flat-square&logo=python&logoColor=white" /> 
   <img alt="Linux" src="https://img.shields.io/badge/-Linux-A05032?style=flat-square&logo=linux&logoColor=white"/> 
   <img alt="Chrome" src="https://img.shields.io/badge/-Chrome-yellow?style=flat-square&logo=googlechrome&logoColor=white"/> 
-  <img alt="AWS" src="https://img.shields.io/badge/-Aws-yellow?style=flat-square&logo=aws&logoColor=yellow"/> 
-  <img alt="PM2" src="https://img.shields.io/badge/-Pm2?style=flat-square&logo=pm2&logoColor=black"/> 
+  <img alt="AWS" src="https://img.shields.io/badge/-AWS-yellow?style=flat-square&logo=AWS&logoColor=yellow"/> 
+  <img alt="PM2" src="https://img.shields.io/badge/-Pm2-white?style=flat-square&logo=pm2&logoColor=black"/> 
 </p>
  </div>
  
