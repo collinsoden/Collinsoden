@@ -25,6 +25,7 @@ mindedness while always seeking a solution to any challenge presented. I am open
   <img alt="PHP" src="https://img.shields.io/badge/-PHP-002232/?style=flat&logo=php&logoColor=white" />
   <img alt="MySQL" src="https://img.shields.io/badge/-MySQL-46a2f1/?style=flat&logo=mysql&logoColor=orange" />
   <img alt="Javascript" src="https://img.shields.io/badge/-Javascript-2088FF/?style=flat&logo=javascript&logoColor=yellow" />
+  <img alt="Typescript" src="https://img.shields.io/badge/-Typescript-46a2f1/?style=flat&logo=typescript&logoColor=blue" />
   <img alt="LinkedIn" src="https://img.shields.io/badge/-LinkedIn-2088BB/?style=flat&logo=linkedin&logoColor=blue" />
   <img alt="VS Code" src="https://img.shields.io/badge/-VS_Code-F05032?style=flat-square&logo=visualstudiocode&logoColor=white" />
   <img alt="Python" src="https://img.shields.io/badge/-Python-2088FF?style=flat-square&logo=python&logoColor=white" /> 
