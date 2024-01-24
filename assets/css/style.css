@@ -1,5 +1,5 @@
-/* 
-# Spinner 
+/*
+# Spinner
 */
 
 .spinner {
@@ -101,7 +101,7 @@ h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: linear-gradient(145deg, #3a0564, #200338);
+  background: linear-gradient(145deg, #161516, #060507);
   box-shadow: 10px 0px 12px #1c0330,
     -35px -35px 12px #2d0350;
   overflow-y: auto;
@@ -227,7 +227,7 @@ h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: rgb(99, 7, 190);
+  background-color: rgb(0, 0, 0);
   color: #fff;
   width: 40px;
   height: 40px;
