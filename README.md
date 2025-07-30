@@ -8,7 +8,7 @@
 <img width="100%" src="https://github.com/collinsoden/collinsoden/blob/master/assets/img/Collins-Oden_Cover.png" />
 </div>
 
-My Name is [Collins Oden](https://procodes.tech/). I am a tech enthusiast, a software engineer with interest in technology and innovations.
+A software engineer with interest in technology and innovations.
 My strongest skills are organization, written and verbal communication, problem solving,
 and multi-tasking within a fast-paced environment. I am a dedicated individual who seeks out new experiences with open
 mindedness while always seeking a solution to any challenge presented. I am open to work.
