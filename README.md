@@ -43,12 +43,6 @@ mindedness while always seeking a solution to any challenge presented. I am open
 
 [![My GitHub Stats](https://github-readme-stats.vercel.app/api/?username=collinsoden&count_private=true&theme=tokyonight&showicons=true)]()
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=collinsoden&theme=dark)](https://git.io/streak-stats)
-
-[![My GitHub Language Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=collinsoden&langs_count=5&theme=tokyonight)]()
-
-![](https://komarev.com/ghpvc/?username=collinsoden&color=green) [![wakatime](https://wakatime.com/badge/user/61d66f9f-ddbc-4ed6-88fe-4d5f2d338caf.svg)](https://wakatime.com/@61d66f9f-ddbc-4ed6-88fe-4d5f2d338caf)
-
 <img src="https://cr-ss-service.azurewebsites.net/api/ScreenShot?widget=summary&username=collinsoden&badges=2&show-avatar=false&style=--header-bg-color:%23000;--border-radius:10px" alt="Codersrank" height="200" style="vertical-align:top; margin:4px">
 
 ### ✍️ Random Dev Quote
@@ -85,4 +79,5 @@ mindedness while always seeking a solution to any challenge presented. I am open
     <a href="https://facebook.com/officialcollinsoden" target="_blank"><img alt="Facebook" src="https://img.shields.io/badge/facebook-%230077B5.svg?&style=for-the-badge&logo=facebook&logoColor=white" /></a>
 
 </div>
+
 
