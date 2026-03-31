@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="./public/brand-mark.svg" alt="Collins Oden logo" width="420" />
+
 # Collins Oden
 
 ### Fullstack Software Engineer
@@ -158,3 +160,9 @@ Bespoke personal portfolio site with smooth animations, responsive layouts, and 
 _Open to new opportunities · Nigeria · Remote-friendly_
 
 </div>
+
+## Connect
+
+- Portfolio: [collinsoden](https://github.com/collinsoden)
+- LinkedIn: [linkedin.com/in/collinsoden](https://linkedin.com/in/collinsoden)
+- Email: [Collinsoden22@gmail.com](mailto:Collinsoden22@gmail.com)
