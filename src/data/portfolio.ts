@@ -2,8 +2,8 @@ export const personalInfo = {
   name: "Collins Oden",
   title: "Fullstack Software Engineer",
   tagline: "Node.js · TypeScript · React",
-  bio: "Fullstack engineer with four years of experience building and shipping scalable backend systems and web applications across Node.js, TypeScript, Python and React. Experienced owning large technical decisions independently — from database schema design and API architecture through to CI/CD and deployment — with a track record of shipping production platforms solo without PM or DevOps support.",
-  location: "Nigeria",
+  bio: "Fullstack engineer with four years of experience building and shipping scalable backend systems and web applications across Node.js, TypeScript, Python and React. Experienced owning large technical decisions independently, from database schema design and API architecture through to CI/CD and deployment, with a track record of shipping production platforms solo without PM or DevOps support.",
+  location: "Remote, Nigeria",
   availability: "Open to opportunities",
   email: "Collinsoden22@gmail.com",
   github: "https://github.com/collinsoden",
@@ -42,42 +42,63 @@ export const skills = [
 export const techBadges = [
   {
     name: "TypeScript",
-    color: "bg-blue-500/20 text-blue-300 border-blue-500/30",
+    color:
+      "bg-blue-100 text-blue-800 border-blue-200 dark:bg-blue-500/20 dark:text-blue-300 dark:border-blue-500/30",
   },
   {
     name: "JavaScript",
-    color: "bg-yellow-500/20 text-yellow-300 border-yellow-500/30",
+    color:
+      "bg-amber-100 text-amber-900 border-amber-200 dark:bg-yellow-500/20 dark:text-yellow-300 dark:border-yellow-500/30",
   },
   {
     name: "Python",
-    color: "bg-green-500/20 text-green-300 border-green-500/30",
+    color:
+      "bg-green-100 text-green-800 border-green-200 dark:bg-green-500/20 dark:text-green-300 dark:border-green-500/30",
   },
-  { name: "React", color: "bg-cyan-500/20 text-cyan-300 border-cyan-500/30" },
+  {
+    name: "React",
+    color:
+      "bg-cyan-100 text-cyan-800 border-cyan-200 dark:bg-cyan-500/20 dark:text-cyan-300 dark:border-cyan-500/30",
+  },
   {
     name: "Node.js",
-    color: "bg-emerald-500/20 text-emerald-300 border-emerald-500/30",
+    color:
+      "bg-emerald-100 text-emerald-800 border-emerald-200 dark:bg-emerald-500/20 dark:text-emerald-300 dark:border-emerald-500/30",
   },
   {
     name: "Django",
-    color: "bg-green-600/20 text-green-300 border-green-600/30",
+    color:
+      "bg-lime-100 text-lime-900 border-lime-200 dark:bg-green-600/20 dark:text-green-300 dark:border-green-600/30",
   },
-  { name: "PostgreSQL", color: "bg-sky-500/20 text-sky-300 border-sky-500/30" },
+  {
+    name: "PostgreSQL",
+    color:
+      "bg-sky-100 text-sky-800 border-sky-200 dark:bg-sky-500/20 dark:text-sky-300 dark:border-sky-500/30",
+  },
   {
     name: "MongoDB",
-    color: "bg-emerald-600/20 text-emerald-300 border-emerald-600/30",
+    color:
+      "bg-teal-100 text-teal-800 border-teal-200 dark:bg-emerald-600/20 dark:text-emerald-300 dark:border-emerald-600/30",
   },
   {
     name: "Tailwind",
-    color: "bg-orange-500/20 text-orange-300 border-orange-500/30",
+    color:
+      "bg-orange-100 text-orange-800 border-orange-200 dark:bg-orange-500/20 dark:text-orange-300 dark:border-orange-500/30",
   },
-  { name: "Docker", color: "bg-blue-600/20 text-blue-300 border-blue-600/30" },
+  {
+    name: "Docker",
+    color:
+      "bg-indigo-100 text-indigo-800 border-indigo-200 dark:bg-blue-600/20 dark:text-blue-300 dark:border-blue-600/30",
+  },
   {
     name: "GitHub Actions",
-    color: "bg-zinc-500/20 text-zinc-300 border-zinc-500/30",
+    color:
+      "bg-zinc-200 text-zinc-800 border-zinc-300 dark:bg-zinc-500/20 dark:text-zinc-300 dark:border-zinc-500/30",
   },
   {
     name: "REST API",
-    color: "bg-violet-500/20 text-violet-300 border-violet-500/30",
+    color:
+      "bg-violet-100 text-violet-800 border-violet-200 dark:bg-violet-500/20 dark:text-violet-300 dark:border-violet-500/30",
   },
 ];
 
@@ -121,7 +142,7 @@ export const experience = [
     period: "2025 – 2026",
     location: "Remote",
     description:
-      "Architected and built the entire backend for a bug-bounty and software testing platform from scratch as the sole engineer — now in active App Store and Play Store review.",
+      "Architected and built the entire backend for a bug-bounty and software testing platform from scratch as the sole engineer, now in active App Store and Play Store review.",
     highlights: [
       "Built user management, submission workflows, and notification systems from scratch",
       "Designed and optimised PostgreSQL schemas to ensure data integrity under high-concurrency operations",
@@ -185,7 +206,7 @@ export const projects = [
     description:
       "A bug-bounty and software testing platform with user management, submission workflows, and notification systems. Currently in active App Store and Play Store review.",
     longDescription:
-      "Architected and built entirely solo — backend, frontend, and infrastructure — from schema design through to deployment.",
+      "Architected and built entirely solo, backend, frontend, and infrastructure, from schema design through to deployment.",
     tech: ["Node.js", "TypeScript", "PostgreSQL", "React", "Docker"],
     github: null,
     live: "https://testbounty.vercel.app",
@@ -211,7 +232,7 @@ export const projects = [
   {
     title: "Theodore Effiong",
     description:
-      "A bespoke personal portfolio site. Smooth animations, responsive layouts, and a strong personal brand aesthetic — designed and shipped end-to-end.",
+      "A bespoke personal portfolio site. Smooth animations, responsive layouts, and a strong personal brand aesthetic, designed and shipped end-to-end.",
     longDescription:
       "Designed and developed a bespoke portfolio site with smooth animations and responsive layouts.",
     tech: ["React", "TypeScript", "Tailwind CSS", "Vite"],
