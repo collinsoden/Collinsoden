@@ -18,9 +18,8 @@ const categoryIcons: Record<string, string> = {
   Tools: '⊞',
 }
 
-function SkillBar({ name, level, category, visible }: {
+function SkillCard({ name, category, visible }: {
   name: string
-  level: number
   category: string
   visible: boolean
 }) {
@@ -41,8 +40,8 @@ function SkillBar({ name, level, category, visible }: {
             {name}
           </span>
         </div>
-        <span className={`text-xs font-mono font-medium ${isDark ? 'text-zinc-500' : 'text-zinc-400'}`}>
-          {level}%
+        <span className={`text-[11px] font-semibold uppercase tracking-[0.18em] ${isDark ? 'text-zinc-500' : 'text-zinc-500'}`}>
+          {category}
         </span>
       </div>
 
@@ -50,7 +49,7 @@ function SkillBar({ name, level, category, visible }: {
         <div
           className={`h-full rounded-full bg-linear-to-r ${gradient} transition-all duration-1000 ease-out`}
           style={{
-            width: visible ? `${level}%` : '0%',
+            width: visible ? '100%' : '0%',
           }}
         />
       </div>
@@ -106,7 +105,7 @@ export default function Skills() {
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeader subtitle="Technologies and tools I work with regularly, organized by proficiency.">
+        <SectionHeader subtitle="Technologies and tools I work with regularly, organized by area.">
           My Tech Stack
         </SectionHeader>
 
@@ -114,10 +113,6 @@ export default function Skills() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
           {Object.entries(categoryIcons).map(([cat, icon]) => {
             const count = skills.filter(s => s.category === cat).length
-            const avgLevel = Math.round(
-              skills.filter(s => s.category === cat).reduce((a, s) => a + s.level, 0) /
-              skills.filter(s => s.category === cat).length
-            )
             const gradient = categoryColors[cat]
 
             return (
@@ -140,7 +135,7 @@ export default function Skills() {
                   {cat}
                 </div>
                 <div className={`text-xs ${isDark ? 'text-zinc-500' : 'text-zinc-500'}`}>
-                  {count} skills · {avgLevel}% avg
+                  {count} technologies
                 </div>
                 {activeCategory === cat && (
                   <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-orange-500" />
@@ -177,9 +172,8 @@ export default function Skills() {
               style={{ animationDelay: `${i * 0.05}s` }}
               className={visible ? 'fade-in-up' : 'opacity-0'}
             >
-              <SkillBar
+              <SkillCard
                 name={skill.name}
-                level={skill.level}
                 category={skill.category}
                 visible={visible}
               />

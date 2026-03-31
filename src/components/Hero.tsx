@@ -211,13 +211,19 @@ export default function Hero() {
 
           {/* Tech badges */}
           <div
-            className="flex flex-wrap items-center justify-center gap-2 max-w-3xl fade-in-up"
+            className={`flex flex-wrap items-center justify-center gap-2 max-w-4xl rounded-3xl px-4 py-4 fade-in-up ${isDark
+              ? 'bg-white/4 border border-white/8'
+              : 'bg-white/78 border border-zinc-200/80 shadow-xl shadow-zinc-300/35 backdrop-blur-md'
+              }`}
             style={{ animationDelay: '0.9s' }}
           >
             {techBadges.map(({ name, color }) => (
               <span
                 key={name}
-                className={`px-3 py-1.5 rounded-lg text-xs font-mono font-medium border ${color} transition-all duration-200 hover:scale-105`}
+                className={`px-3.5 py-2 rounded-xl text-xs font-mono font-semibold border ${color} transition-all duration-200 hover:-translate-y-0.5 hover:scale-105 ${isDark
+                  ? 'shadow-none'
+                  : 'shadow-sm shadow-zinc-200/70'
+                  }`}
               >
                 {name}
               </span>

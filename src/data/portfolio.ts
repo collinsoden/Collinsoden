@@ -14,29 +14,30 @@ export const personalInfo = {
 
 export const skills = [
   // Languages
-  { name: "TypeScript", level: 95, category: "Language", icon: "𝙏𝙎" },
-  { name: "JavaScript", level: 93, category: "Language", icon: "𝙅𝙎" },
-  { name: "Python", level: 85, category: "Language", icon: "𝙋𝙔" },
-  { name: "HTML / CSS", level: 90, category: "Language", icon: "⟨⟩" },
+  { name: "TypeScript", category: "Language", icon: "𝙏𝙎" },
+  { name: "JavaScript", category: "Language", icon: "𝙅𝙎" },
+  { name: "Python", category: "Language", icon: "𝙋𝙔" },
+  { name: "HTML / CSS", category: "Language", icon: "⟨⟩" },
   // Frontend
-  { name: "React", level: 92, category: "Frontend", icon: "⚛" },
-  { name: "Tailwind CSS", level: 90, category: "Frontend", icon: "🌊" },
-  { name: "Zustand", level: 82, category: "Frontend", icon: "⊛" },
-  { name: "Redux", level: 78, category: "Frontend", icon: "↻" },
+  { name: "React", category: "Frontend", icon: "⚛" },
+  { name: "Tailwind CSS", category: "Frontend", icon: "🌊" },
+  { name: "Zustand", category: "Frontend", icon: "⊛" },
+  { name: "Redux", category: "Frontend", icon: "↻" },
   // Backend
-  { name: "Node.js", level: 92, category: "Backend", icon: "⬡" },
-  { name: "Django", level: 80, category: "Backend", icon: "🐍" },
-  { name: "PostgreSQL", level: 85, category: "Backend", icon: "🐘" },
-  { name: "MongoDB", level: 82, category: "Backend", icon: "🍃" },
-  { name: "MySQL", level: 78, category: "Backend", icon: "⬦" },
-  { name: "REST API", level: 93, category: "Backend", icon: "⇌" },
+  { name: "Node.js", category: "Backend", icon: "⬡" },
+  { name: "Django", category: "Backend", icon: "🐍" },
+  { name: "PostgreSQL", category: "Backend", icon: "🐘" },
+  { name: "MongoDB", category: "Backend", icon: "🍃" },
+  { name: "MySQL", category: "Backend", icon: "⬦" },
+  { name: "REST API", category: "Backend", icon: "⇌" },
   // Tools
-  { name: "Docker", level: 78, category: "Tools", icon: "🐳" },
-  { name: "GitHub Actions", level: 80, category: "Tools", icon: "⚙" },
-  { name: "AWS", level: 72, category: "Tools", icon: "☁" },
-  { name: "Jest", level: 75, category: "Tools", icon: "✓" },
-  { name: "TypeORM", level: 76, category: "Tools", icon: "◈" },
-  { name: "Git", level: 93, category: "Tools", icon: "⎇" },
+  { name: "Docker", category: "Tools", icon: "🐳" },
+  { name: "GitHub Actions", category: "Tools", icon: "⚙" },
+  { name: "AWS", category: "Tools", icon: "☁" },
+  { name: "Jest", category: "Tools", icon: "✓" },
+  { name: "TypeORM", category: "Tools", icon: "◈" },
+  { name: "Git", category: "Tools", icon: "⎇" },
+  { name: "Claude Code", category: "Tools", icon: "</>" },
 ];
 
 export const techBadges = [
