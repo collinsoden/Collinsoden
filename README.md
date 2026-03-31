@@ -163,6 +163,7 @@ _Open to new opportunities · Nigeria · Remote-friendly_
 
 ## Connect
 
-- Portfolio: [collinsoden](https://github.com/collinsoden)
+- Portfolio: [collinsoden](https://collinsoden.me)
+- Github: [collinsoden](https://github.com/collinsoden)
 - LinkedIn: [linkedin.com/in/collinsoden](https://linkedin.com/in/collinsoden)
 - Email: [Collinsoden22@gmail.com](mailto:Collinsoden22@gmail.com)
