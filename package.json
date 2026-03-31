@@ -3,14 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://collinsoden.github.io/collinsoden",
+  "homepage": "https://collinsoden.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "npm run predeploy && gh-pages -d dist"
+    "deploy": "npm run predeploy && cp README.md ./dist && gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.2",
