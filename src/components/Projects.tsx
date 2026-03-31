@@ -201,7 +201,7 @@ export default function Projects() {
             Things I've Built
           </h2>
           <p className={`text-lg max-w-2xl mx-auto ${isDark ? 'text-zinc-400' : 'text-zinc-600'}`}>
-            A selection of projects that showcase my range — from full-stack platforms to open source tools.
+            A selection of projects that showcase my range, from full-stack platforms to open source tools.
           </p>
         </div>
 

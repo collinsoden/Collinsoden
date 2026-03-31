@@ -4,6 +4,19 @@ import { GithubIcon, LinkedinIcon, FacebookIcon } from './icons'
 import { useTheme } from '../contexts/ThemeContext'
 import { personalInfo } from '../data/portfolio'
 
+declare global {
+  interface Window {
+    grecaptcha?: {
+      ready: (callback: () => void) => void
+      execute: (siteKey: string, options: { action: string }) => Promise<string>
+    }
+  }
+}
+
+const formspreeFormId = import.meta.env.VITE_FORMSPREE_FORM_ID
+const recaptchaSiteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY
+const hasFormConfig = Boolean(formspreeFormId && recaptchaSiteKey)
+
 const socialLinks = [
   {
     icon: GithubIcon,
@@ -33,8 +46,10 @@ const socialLinks = [
 
 export default function Contact() {
   const { isDark } = useTheme()
-  const [form, setForm] = useState({ name: '', email: '', message: '' })
+  const [form, setForm] = useState({ name: '', email: '', message: '', companyWebsite: '' })
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
+  const [errorMessage, setErrorMessage] = useState('')
+  const [captchaReady, setCaptchaReady] = useState(!recaptchaSiteKey)
   const [copied, setCopied] = useState(false)
   const [visible, setVisible] = useState(false)
   const sectionRef = useRef<HTMLElement>(null)
@@ -48,19 +63,106 @@ export default function Contact() {
     return () => observer.disconnect()
   }, [])
 
+  useEffect(() => {
+    if (!recaptchaSiteKey) {
+      return
+    }
+
+    if (window.grecaptcha) {
+      setCaptchaReady(true)
+      return
+    }
+
+    const script = document.createElement('script')
+    script.src = `https://www.google.com/recaptcha/api.js?render=${recaptchaSiteKey}`
+    script.async = true
+    script.defer = true
+    script.onload = () => setCaptchaReady(true)
+    script.onerror = () => {
+      setCaptchaReady(false)
+      setErrorMessage('reCAPTCHA failed to load. Please refresh and try again.')
+    }
+
+    document.head.appendChild(script)
+
+    return () => {
+      script.onload = null
+      script.onerror = null
+    }
+  }, [])
+
   const handleCopy = async () => {
     await navigator.clipboard.writeText(personalInfo.email)
     setCopied(true)
     setTimeout(() => setCopied(false), 2000)
   }
 
+  const getRecaptchaToken = async () => {
+    if (!recaptchaSiteKey || !window.grecaptcha) {
+      throw new Error('reCAPTCHA is not configured yet.')
+    }
+
+    return new Promise<string>((resolve, reject) => {
+      window.grecaptcha?.ready(() => {
+        window.grecaptcha
+          ?.execute(recaptchaSiteKey, { action: 'contact_form_submit' })
+          .then(resolve)
+          .catch(() => reject(new Error('Unable to verify reCAPTCHA.')))
+      })
+    })
+  }
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    setErrorMessage('')
+
+    if (!hasFormConfig) {
+      setStatus('error')
+      setErrorMessage('Form not configured for submissions.')
+      return
+    }
+
     setStatus('sending')
-    // Simulate send (replace with your form handler / API)
-    await new Promise(r => setTimeout(r, 1500))
-    setStatus('sent')
-    setForm({ name: '', email: '', message: '' })
+
+    try {
+      const captchaToken = await getRecaptchaToken()
+
+      const response = await fetch(`https://formspree.io/f/${formspreeFormId}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          message: form.message,
+          _replyto: form.email,
+          _subject: `New portfolio inquiry from ${form.name}`,
+          _gotcha: form.companyWebsite,
+          'g-recaptcha-response': captchaToken,
+        }),
+      })
+
+      const result = (await response.json().catch(() => null)) as
+        | { errors?: Array<{ message?: string }> }
+        | null
+
+      if (!response.ok) {
+        const message = result?.errors?.[0]?.message ?? 'Something went wrong while sending your message.'
+        throw new Error(message)
+      }
+
+      setStatus('sent')
+      setForm({ name: '', email: '', message: '', companyWebsite: '' })
+    } catch (error) {
+      setStatus('error')
+      setErrorMessage(
+        error instanceof Error
+          ? error.message
+          : 'Something went wrong while sending your message.'
+      )
+    }
   }
 
   const inputBase = `w-full px-4 py-3 rounded-xl text-sm border outline-none transition-all duration-200 focus:ring-2 focus:ring-orange-500/30 focus:border-orange-500/50 ${isDark
@@ -220,6 +322,16 @@ export default function Contact() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">
+                    <input
+                      type="text"
+                      tabIndex={-1}
+                      autoComplete="off"
+                      value={form.companyWebsite}
+                      onChange={e => setForm(f => ({ ...f, companyWebsite: e.target.value }))}
+                      className="hidden"
+                      aria-hidden="true"
+                    />
+
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label className={`block text-xs font-medium mb-1.5 ${isDark ? 'text-zinc-400' : 'text-zinc-600'
@@ -230,7 +342,7 @@ export default function Contact() {
                         type="text"
                         value={form.name}
                         onChange={e => setForm(f => ({ ...f, name: e.target.value }))}
-                        placeholder="Collins Oden"
+                          placeholder="Your name"
                         required
                         className={inputBase}
                       />
@@ -266,9 +378,33 @@ export default function Contact() {
                     />
                   </div>
 
+                    <div className="space-y-2">
+                      <p className={`text-xs ${isDark ? 'text-zinc-500' : 'text-zinc-500'}`}>
+                        Protected by Formspree and Google reCAPTCHA.
+                      </p>
+
+                      {!hasFormConfig && (
+                        <p className="text-xs text-amber-400">
+                          Form submissions are disabled until `VITE_FORMSPREE_FORM_ID` and `VITE_RECAPTCHA_SITE_KEY` are set.
+                        </p>
+                      )}
+
+                      {hasFormConfig && !captchaReady && (
+                        <p className="text-xs text-amber-400">
+                          Loading reCAPTCHA protection...
+                        </p>
+                      )}
+
+                      {status === 'error' && errorMessage && (
+                        <p className="text-sm text-rose-400">
+                          {errorMessage}
+                        </p>
+                      )}
+                    </div>
+
                   <button
                     type="submit"
-                    disabled={status === 'sending'}
+                      disabled={status === 'sending' || !hasFormConfig || !captchaReady}
                     className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl font-semibold text-sm bg-linear-to-r from-orange-500 to-amber-500 text-white shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 hover:scale-[1.02] active:scale-95 disabled:opacity-70 disabled:cursor-not-allowed disabled:scale-100 transition-all duration-200"
                   >
                     {status === 'sending' ? (
