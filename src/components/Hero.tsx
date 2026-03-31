@@ -5,9 +5,9 @@ import { useTheme } from '../contexts/ThemeContext'
 import { personalInfo, stats, techBadges } from '../data/portfolio'
 
 const TYPING_STRINGS = [
-  'Full Stack Developer',
-  'TypeScript Enthusiast',
-  'Python Engineer',
+  'Full Stack Engineer',
+  'TypeScript Developer',
+  'Python Developer',
   'Open Source Contributor',
   'Problem Solver',
 ]
