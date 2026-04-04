@@ -203,6 +203,20 @@ export const experience = [
 
 export const projects = [
   {
+    title: "Props Link",
+    description:
+      "A platform that connects property owners with potential tenants. Built solo from infrastructure to deployment. Scalable RESTful APIs, secure auth flows, and a mobile-first responsive frontend.",
+    longDescription:
+      "Owned the full stack on a property management platform with no PM or DevOps support.",
+    tech: ["Node.js", "TypeScript", "React", "PostgreSQL", "Tailwind CSS"],
+    github: null,
+    live: "https://propslinkapp.com",
+    image: null,
+    featured: false,
+    metrics: ["Sole engineer", "Mobile-first", "Full stack"],
+    category: "Full Stack",
+  },
+  {
     title: "Test Bounty",
     description:
       "A bug-bounty and software testing platform with user management, submission workflows, and notification systems. Currently in active App Store and Play Store review.",
@@ -243,20 +257,6 @@ export const projects = [
     featured: true,
     metrics: ["Custom design", "Fully responsive", "Live on Vercel"],
     category: "Frontend",
-  },
-  {
-    title: "Props Link",
-    description:
-      "A platform that connects property owners with potential tenants. Built solo from infrastructure to deployment. Scalable RESTful APIs, secure auth flows, and a mobile-first responsive frontend.",
-    longDescription:
-      "Owned the full stack on a property management platform with no PM or DevOps support.",
-    tech: ["Node.js", "TypeScript", "React", "PostgreSQL", "Tailwind CSS"],
-    github: null,
-    live: "https://propslinkapp.com",
-    image: null,
-    featured: false,
-    metrics: ["Sole engineer", "Mobile-first", "Full stack"],
-    category: "Full Stack",
   },
   {
     title: "Kiotapay",
