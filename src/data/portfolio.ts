@@ -3,7 +3,7 @@ export const personalInfo = {
   title: "Fullstack Software Engineer",
   tagline: "Node.js · TypeScript · React",
   bio: "Fullstack engineer with four years of experience building and shipping scalable backend systems and web applications across Node.js, TypeScript, Python and React. Experienced owning large technical decisions independently, from database schema design and API architecture through to CI/CD and deployment, with a track record of shipping production platforms solo without PM or DevOps support.",
-  location: "Remote, Nigeria",
+  location: "Remote, Global",
   availability: "Open to opportunities",
   email: "Collinsoden22@gmail.com",
   github: "https://github.com/collinsoden",

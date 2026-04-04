@@ -157,7 +157,7 @@ Bespoke personal portfolio site with smooth animations, responsive layouts, and 
 
 <div align="center">
 
-_Open to new opportunities · Nigeria · Remote-friendly_
+_Open to new opportunities · Global · Remote-friendly_
 
 </div>
 
