@@ -111,7 +111,7 @@ export const experience = [
     period: "2025 – 2026",
     location: "Remote",
     description:
-      "Sole engineer on a digital networking platform, owning the full stack from infrastructure design through to deployment with no PM or DevOps support.",
+      "Sole engineer on a property management platform, owning the full stack from infrastructure design through to deployment with no PM or DevOps support.",
     highlights: [
       "Engineered scalable RESTful API endpoints in Node.js/TypeScript, designing backend architecture from the ground up",
       "Implemented secure authentication and authorisation flows with protected data access",
@@ -247,9 +247,9 @@ export const projects = [
   {
     title: "Props Link",
     description:
-      "A digital networking platform built solo from infrastructure to deployment. Scalable RESTful APIs, secure auth flows, and a mobile-first responsive frontend.",
+      "A platform that connects property owners with potential tenants. Built solo from infrastructure to deployment. Scalable RESTful APIs, secure auth flows, and a mobile-first responsive frontend.",
     longDescription:
-      "Owned the full stack on a digital networking platform with no PM or DevOps support.",
+      "Owned the full stack on a property management platform with no PM or DevOps support.",
     tech: ["Node.js", "TypeScript", "React", "PostgreSQL", "Tailwind CSS"],
     github: null,
     live: "https://propslinkapp.com",

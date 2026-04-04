@@ -106,7 +106,7 @@ Location-aware ride-hailing and rental platform. RESTful APIs in Node.js/TypeScr
 
 ### Props Link
 
-Digital networking platform built solo from infrastructure to deployment — scalable RESTful APIs, secure auth flows, and a mobile-first responsive frontend.
+Property Management platform built solo from infrastructure to deployment — scalable RESTful APIs, secure auth flows, and a mobile-first responsive frontend.
 
 **Stack**: Node.js · TypeScript · React · PostgreSQL · Tailwind CSS
 

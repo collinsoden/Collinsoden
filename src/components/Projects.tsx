@@ -146,13 +146,17 @@ function ProjectCard({ project, featured, index, visible }: {
           </div>
 
           {/* View project link */}
-          <div className={`flex items-center gap-1 text-xs font-medium transition-all duration-200 ${hovered
+          <a href={project.live}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={e => e.stopPropagation()}
+            className={`flex items-center gap-1 text-xs font-medium transition-all duration-200 ${hovered
               ? 'text-orange-400 translate-x-1'
               : isDark ? 'text-zinc-600' : 'text-zinc-400'
             }`}>
             View project
             <ArrowUpRight size={13} />
-          </div>
+          </a>
         </div>
       </div>
     </div>
