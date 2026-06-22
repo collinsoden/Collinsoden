@@ -203,6 +203,24 @@ export const experience = [
 
 export const projects = [
   {
+    title: "Depot Manager",
+    description:
+      "The web control plane and cloud system of record for the RDM client. A Next.js app and API with a Prisma/PostgreSQL data model, plus cron, maintenance, and WebSocket worker services, real-time dashboards, push notifications, and signed desktop release management.",
+    longDescription:
+      "Designed and built the multi-service control plane end to end: schema and migrations, REST API, background workers, Dockerized deployment, and Tauri desktop client release/update infrastructure.",
+    tech: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Docker"],
+    github: "https://github.com/collinsoden/depot-manager",
+    live: "https://depotmanager.io",
+    image: null,
+    featured: true,
+    metrics: [
+      "Cloud control plane",
+      "Multi-service + workers",
+      "Realtime + push",
+    ],
+    category: "Full Stack",
+  },
+  {
     title: "Props Link",
     description:
       "A platform that connects property owners with potential tenants. Built solo from infrastructure to deployment. Scalable RESTful APIs, secure auth flows, and a mobile-first responsive frontend.",

@@ -88,7 +88,7 @@ export default function Hero() {
           >
             <span className="w-2 h-2 rounded-full bg-emerald-500 glow-pulse" />
             {personalInfo.availability}
-            <Handshake size={14} className="text-orange-400" />
+            <Handshake size={14} className={isDark ? 'text-orange-400' : 'text-orange-600'} />
           </div>
 
           {/* Main heading */}
@@ -128,7 +128,7 @@ export default function Hero() {
 
           {/* Location */}
           <div
-            className={`flex items-center gap-1.5 text-sm mb-10 fade-in-up ${isDark ? 'text-zinc-500' : 'text-zinc-500'
+            className={`flex items-center gap-1.5 text-sm mb-10 fade-in-up ${isDark ? 'text-zinc-500' : 'text-zinc-600'
               }`}
             style={{ animationDelay: '0.5s' }}
           >
@@ -202,7 +202,7 @@ export default function Hero() {
                 <div className="text-3xl font-bold bg-linear-to-r from-orange-400 to-amber-400 bg-clip-text text-transparent mb-1">
                   {value}
                 </div>
-                <div className={`text-xs font-medium ${isDark ? 'text-zinc-500' : 'text-zinc-500'}`}>
+                <div className={`text-xs font-medium ${isDark ? 'text-zinc-500' : 'text-zinc-600'}`}>
                   {label}
                 </div>
               </div>

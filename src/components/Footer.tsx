@@ -13,17 +13,20 @@ export default function Footer() {
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="flex items-center gap-2 group"
+            aria-label="Back to top"
           >
-            <div className="w-8 h-8 rounded-lg bg-linear-to-br from-orange-500 to-amber-500 flex items-center justify-center text-white font-bold text-xs shadow-md shadow-orange-500/25 group-hover:shadow-orange-500/40 transition-shadow">
-              {personalInfo.name.split(' ').map(w => w[0]).join('').slice(0, 2)}
-            </div>
+            <img
+              src="/brand-mark.svg"
+              alt={`${personalInfo.name} logo`}
+              className="w-8 h-8 rounded-lg shadow-md shadow-orange-500/20 transition-transform duration-300 group-hover:scale-105"
+            />
             <span className={`text-sm font-medium ${isDark ? 'text-zinc-400' : 'text-zinc-600'}`}>
               {personalInfo.name}
             </span>
           </button>
 
           {/* Year */}
-          <p className={`text-sm ${isDark ? 'text-zinc-600' : 'text-zinc-400'}`}>
+          <p className={`text-sm ${isDark ? 'text-zinc-600' : 'text-zinc-500'}`}>
             © {new Date().getFullYear()} {personalInfo.name}
           </p>
         </div>
