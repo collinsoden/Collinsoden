@@ -133,7 +133,14 @@ export const experience = [
       "Built responsive, mobile-friendly frontend interfaces maintaining ARIA/WCAG accessibility standards",
       "Explored LLM orchestration patterns to automate repetitive engineering tasks, improving team velocity",
     ],
-    tech: ["Node.js", "TypeScript", "MongoDB", "GitHub Actions", "React"],
+    tech: [
+      "Node.js",
+      "TypeScript",
+      "MongoDB",
+      "GitHub Actions",
+      "React",
+      "Kafka",
+    ],
     type: "contract",
   },
   {
@@ -210,7 +217,7 @@ export const projects = [
       "Designed and built the multi-service control plane end to end: schema and migrations, REST API, background workers, Dockerized deployment, and Tauri desktop client release/update infrastructure.",
     tech: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Docker"],
     github: "https://github.com/collinsoden/depot-manager",
-    live: "https://depotmanager.io",
+    live: "https://mydepotmanager.com",
     image: null,
     featured: true,
     metrics: [
@@ -219,6 +226,68 @@ export const projects = [
       "Realtime + push",
     ],
     category: "Full Stack",
+  },
+  {
+    title: "Rovacruise",
+    description:
+      "A mobility and vehicle-rental platform with booking flows, KYC gating, maps, location-aware discovery, payout flows, and operational dashboards for modern transport services.",
+    longDescription:
+      "Built the production-grade Next.js frontend for customer and operations workflows, integrating protected auth, maps, rental checkout, KYC experiences, and polished dashboard surfaces.",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "React Query",
+      "Radar Maps",
+      "Tailwind CSS",
+    ],
+    github: null,
+    live: "https://rovacruise.collinsoden.me",
+    image: null,
+    featured: true,
+    metrics: ["Booking platform", "Maps + location", "KYC + payouts"],
+    category: "Full Stack",
+  },
+  {
+    title: "FocusHub",
+    description:
+      "A digital platform for Abuja's innovation hub, combining workspace bookings, memberships, events, incubation applications, venture support, and internal operational dashboards.",
+    longDescription:
+      "Designed and implemented a multi-surface Next.js platform with Prisma-backed workflows, Redis/BullMQ jobs, authenticated dashboards, and structured modules for bookings, programs, and admin operations.",
+    tech: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "BullMQ"],
+    github: null,
+    live: "https://focushub.africa",
+    image: null,
+    featured: true,
+    metrics: ["Workspace platform", "Incubation workflows", "Admin dashboards"],
+    category: "Full Stack",
+  },
+  {
+    title: "Test Pilot",
+    description:
+      "A verified web-application testing platform where clients can prove ownership, configure safe test scope, run automated browser, performance, security, and load checks, and review actionable reports.",
+    longDescription:
+      "Built as a full-stack product with a NestJS API, worker-oriented job orchestration, Prisma/PostgreSQL persistence, report generation, client dashboards, admin controls, and testing-tool integrations.",
+    tech: ["NestJS", "Next.js", "Prisma", "PostgreSQL", "BullMQ", "Playwright"],
+    github: null,
+    live: "https://test.collinsoden.me",
+    image: null,
+    featured: true,
+    metrics: ["Verified testing", "Worker orchestration", "Reports + billing"],
+    category: "Full Stack",
+  },
+  {
+    title: "Depot Operations",
+    description:
+      "A premium corporate website rebuild for DTSS, replacing a legacy PHP presence with a cleaner, faster, modern Next.js experience for services, projects, resources, and lead capture.",
+    longDescription:
+      "Rebuilt the company's web presence end to end with a refined visual system, reusable content architecture, and a modern App Router marketing stack tuned for presentation and maintainability.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
+    github: null,
+    live: "https://depotoperations.ng",
+    image: null,
+    featured: true,
+    metrics: ["Corporate rebuild", "Legacy refresh", "Modern marketing site"],
+    category: "Frontend",
   },
   {
     title: "Props Link",
@@ -254,11 +323,18 @@ export const projects = [
       "A location-aware ride-hailing and rental platform. RESTful APIs in Node.js/TypeScript backed by MongoDB, with GitHub Actions CI/CD and WCAG-compliant frontend.",
     longDescription:
       "Backend services and responsive frontend interfaces, with CI/CD pipelines and accessibility-compliant UI.",
-    tech: ["Node.js", "TypeScript", "MongoDB", "React", "GitHub Actions"],
+    tech: [
+      "Node.js",
+      "TypeScript",
+      "MongoDB",
+      "React",
+      "GitHub Actions",
+      "Kafka",
+    ],
     github: null,
     live: "https://alongcities.com",
     image: null,
-    featured: true,
+    featured: false,
     metrics: ["Ride-hailing platform", "CI/CD pipelines", "WCAG compliant"],
     category: "Full Stack",
   },
@@ -272,7 +348,7 @@ export const projects = [
     github: null,
     live: "https://theodoreeffiong.vercel.app",
     image: null,
-    featured: true,
+    featured: false,
     metrics: ["Custom design", "Fully responsive", "Live on Vercel"],
     category: "Frontend",
   },
@@ -311,7 +387,7 @@ export const education = [
 
 export const stats = [
   { value: "4+", label: "Years Experience" },
-  { value: "10+", label: "Projects Shipped" },
+  { value: "15+", label: "Projects Shipped" },
   { value: "6", label: "Companies" },
   { value: "∞", label: "Lines of Code" },
 ];

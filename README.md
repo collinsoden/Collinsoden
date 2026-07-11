@@ -80,48 +80,72 @@ Fullstack engineer with four years of experience building and shipping scalable 
 <tr>
 <td width="50%">
 
-### Test Bounty
+### Depot Manager
 
-Bug-bounty and software testing platform — architected and built entirely solo. Backend, frontend, and infrastructure from schema design through to deployment. Currently in active App Store and Play Store review.
+Cloud control plane and system of record for depot operations, with a Next.js app, Prisma/PostgreSQL data model, runtime workers, real-time updates, and signed desktop release infrastructure.
 
-**Stack**: Node.js · TypeScript · PostgreSQL · React · Docker
+**Stack**: Next.js · TypeScript · Prisma · PostgreSQL · Docker
 
-[🌐 Live](https://testbounty.vercel.app)
+[🌐 Live](https://mydepotmanager.com)
 
 </td>
 <td width="50%">
 
-### Along Cities
+### Rovacruise
 
-Location-aware ride-hailing and rental platform. RESTful APIs in Node.js/TypeScript backed by MongoDB, with GitHub Actions CI/CD and WCAG-compliant frontend interfaces.
+Mobility and vehicle-rental platform with booking flows, KYC gating, maps, payout flows, and operational dashboards for transport services.
 
-**Stack**: Node.js · TypeScript · MongoDB · React · GitHub Actions
+**Stack**: Next.js · TypeScript · React Query · Radar Maps · Tailwind CSS
 
-[🌐 Live](https://alongcities.com)
+[🌐 Live](https://rovacruise.collinsoden.me)
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-### Props Link
+### FocusHub
 
-Property Management platform built solo from infrastructure to deployment — scalable RESTful APIs, secure auth flows, and a mobile-first responsive frontend.
+Digital platform for workspace bookings, memberships, incubation applications, events, venture support, and internal operational dashboards.
 
-**Stack**: Node.js · TypeScript · React · PostgreSQL · Tailwind CSS
+**Stack**: Next.js · TypeScript · Prisma · PostgreSQL · BullMQ
 
-[🌐 Live](https://propslinkapp.com)
+[🌐 Live](https://focushub.africa)
 
 </td>
 <td width="50%">
 
-### Theodore Effiong Portfolio
+### Test Pilot
 
-Bespoke personal portfolio site with smooth animations, responsive layouts, and a strong personal brand aesthetic — designed and shipped end-to-end.
+Verified web application testing platform for automated browser, performance, security, and load checks with scoped execution and actionable reporting.
 
-**Stack**: React · TypeScript · Tailwind CSS · Vite
+**Stack**: NestJS · Next.js · Prisma · PostgreSQL · BullMQ · Playwright
 
-[🌐 Live](https://theodoreeffiong.vercel.app)
+[🌐 Live](https://test.collinsoden.me)
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### Depot Operations
+
+Premium corporate website rebuild for DTSS, replacing a legacy PHP presence with a cleaner modern Next.js marketing experience.
+
+**Stack**: Next.js · TypeScript · Tailwind CSS · React
+
+[🌐 Live](https://depotoperations.ng)
+
+</td>
+<td width="50%">
+
+### Test Bounty
+
+Bug-bounty and software testing platform — architected and built entirely solo from schema design through deployment.
+
+**Stack**: Node.js · TypeScript · PostgreSQL · React · Docker
+
+[🌐 Live](https://testbounty.vercel.app)
 
 </td>
 </tr>
