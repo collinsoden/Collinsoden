@@ -206,6 +206,7 @@ export default function Experience() {
                         }`}
                       >
                         {/* Highlights */}
+                        {job.highlights.length > 0 && (
                         <div className="mb-5">
                           <h4
                             className={`text-xs font-semibold uppercase tracking-widest mb-3 ${
@@ -227,6 +228,7 @@ export default function Experience() {
                             ))}
                           </ul>
                         </div>
+                        )}
 
                         {/* Tech stack */}
                         <div>

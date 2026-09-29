@@ -3,6 +3,7 @@ import { ExternalLink, Star, ArrowUpRight } from "lucide-react";
 import { GithubIcon } from "./icons";
 import { useTheme } from "../contexts/ThemeContext";
 import { projects } from "../data/portfolio";
+import LivePreview from "./LivePreview";
 
 const categoryColors: Record<string, string> = {
   "Full Stack": "bg-violet-500/10 text-violet-400 border-violet-500/20",
@@ -59,6 +60,14 @@ function ProjectCard({
               }}
             />
           </div>
+        )}
+
+        {project.live && (
+          <LivePreview
+            url={project.live}
+            title={project.title}
+            embed={project.preview}
+          />
         )}
 
         <div className="p-6">
@@ -265,8 +274,8 @@ export default function Projects() {
           <p
             className={`text-lg max-w-2xl mx-auto ${isDark ? "text-zinc-400" : "text-zinc-600"}`}
           >
-            A selection of projects that showcase my range, from full-stack
-            platforms to open source tools.
+            Production platforms I've designed, built and shipped. Previews
+            below are the live sites.
           </p>
         </div>
 

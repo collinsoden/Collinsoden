@@ -2,9 +2,9 @@ export const personalInfo = {
   name: "Collins Oden",
   title: "Fullstack Software Engineer",
   tagline: "Node.js · TypeScript · React",
-  bio: "Fullstack engineer with four years of experience building and shipping scalable backend systems and web applications across Node.js, TypeScript, Python and React. Experienced owning large technical decisions independently, from database schema design and API architecture through to CI/CD and deployment, with a track record of shipping production platforms solo without PM or DevOps support.",
-  location: "Remote, Global",
-  availability: "Open to opportunities",
+  bio: "I design and ship production platforms end to end, from database schema and API architecture to CI/CD and deployment, across Node.js, TypeScript, Python and React.",
+  location: "Nigeria · Remote | Hybrid",
+  availability: "Software Engineer at MTN Nigeria",
   email: "Collinsoden22@gmail.com",
   github: "https://github.com/collinsoden",
   linkedin: "https://linkedin.com/in/collinsoden",
@@ -104,6 +104,40 @@ export const techBadges = [
 ];
 
 export const experience = [
+  {
+    company: "MTN Nigeria",
+    url: "https://www.mtn.ng",
+    role: "Software Engineer",
+    period: "2026 – Present",
+    location: "Nigeria",
+    description:
+      "Software Engineer at MTN Nigeria, Africa's largest mobile network operator.",
+    highlights: [] as string[],
+    tech: ["TypeScript", "Node.js"],
+    type: "contract",
+  },
+  {
+    company: "Rovacruise",
+    url: "https://rovacruise.com",
+    role: "Frontend Engineer",
+    period: "2026 – Present",
+    location: "Remote",
+    description:
+      "Building the production Next.js frontend for a mobility and vehicle-rental platform, covering customer booking flows and operations dashboards.",
+    highlights: [
+      "Built booking and rental checkout flows with protected authentication and KYC gating",
+      "Integrated maps and location-aware vehicle discovery using Radar",
+      "Shipped operational dashboards and payout flows for fleet and transport operators",
+    ],
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "React Query",
+      "Radar Maps",
+      "Tailwind CSS",
+    ],
+    type: "contract",
+  },
   {
     company: "Props Link",
     url: "https://propslinkapp.com",
@@ -219,6 +253,7 @@ export const projects = [
     github: "https://github.com/collinsoden/depot-manager",
     live: "https://mydepotmanager.com",
     image: null,
+    preview: true,
     featured: true,
     metrics: [
       "Cloud control plane",
@@ -241,8 +276,9 @@ export const projects = [
       "Tailwind CSS",
     ],
     github: null,
-    live: "https://rovacruise.collinsoden.me",
+    live: "https://rovacruise.com",
     image: null,
+    preview: true,
     featured: true,
     metrics: ["Booking platform", "Maps + location", "KYC + payouts"],
     category: "Full Stack",
@@ -257,8 +293,26 @@ export const projects = [
     github: null,
     live: "https://focushub.africa",
     image: null,
+    // focushub.africa sends X-Frame-Options: DENY, so it can't be embedded
+    preview: false,
     featured: true,
     metrics: ["Workspace platform", "Incubation workflows", "Admin dashboards"],
+    category: "Full Stack",
+  },
+  {
+    title: "Bullish AI",
+    description:
+      "FocusHub's learning platform for AI, data, and software, with curated course pathways, assessed projects, mentorship, grading, and certificates.",
+    longDescription:
+      "Built the learning platform behind FocusHub's BullishAI pathways, covering course delivery, project assessment, grading, and certificate issuance.",
+    tech: ["Next.js", "TypeScript"],
+    github: null,
+    live: "https://bullishai.net",
+    image: null,
+    // bullishai.net sends X-Frame-Options: DENY, so it can't be embedded
+    preview: false,
+    featured: true,
+    metrics: ["Course pathways", "Assessed projects", "Certificates"],
     category: "Full Stack",
   },
   {
@@ -271,6 +325,7 @@ export const projects = [
     github: null,
     live: "https://test.collinsoden.me",
     image: null,
+    preview: false,
     featured: true,
     metrics: ["Verified testing", "Worker orchestration", "Reports + billing"],
     category: "Full Stack",
@@ -285,6 +340,7 @@ export const projects = [
     github: null,
     live: "https://depotoperations.ng",
     image: null,
+    preview: true,
     featured: true,
     metrics: ["Corporate rebuild", "Legacy refresh", "Modern marketing site"],
     category: "Frontend",
@@ -299,6 +355,7 @@ export const projects = [
     github: null,
     live: "https://propslinkapp.com",
     image: null,
+    preview: true,
     featured: false,
     metrics: ["Sole engineer", "Mobile-first", "Full stack"],
     category: "Full Stack",
@@ -313,6 +370,7 @@ export const projects = [
     github: null,
     live: "https://testbounty.vercel.app",
     image: null,
+    preview: true,
     featured: true,
     metrics: ["Sole engineer", "App Store review", "Full stack"],
     category: "Full Stack",
@@ -334,6 +392,7 @@ export const projects = [
     github: null,
     live: "https://alongcities.com",
     image: null,
+    preview: true,
     featured: false,
     metrics: ["Ride-hailing platform", "CI/CD pipelines", "WCAG compliant"],
     category: "Full Stack",
@@ -348,6 +407,7 @@ export const projects = [
     github: null,
     live: "https://theodoreeffiong.vercel.app",
     image: null,
+    preview: true,
     featured: false,
     metrics: ["Custom design", "Fully responsive", "Live on Vercel"],
     category: "Frontend",
@@ -360,8 +420,9 @@ export const projects = [
       "Core product development for Kiotapay, a property management fintech platform.",
     tech: ["TypeScript", "Python", "React", "PostgreSQL", "Node.js"],
     github: null,
-    live: "https://kiotapay.com",
+    live: "https://kiotapay.co.ke",
     image: null,
+    preview: true,
     featured: false,
     metrics: ["Fintech platform", "TypeScript + Python", "Property management"],
     category: "Full Stack",
@@ -387,7 +448,6 @@ export const education = [
 
 export const stats = [
   { value: "4+", label: "Years Experience" },
-  { value: "15+", label: "Projects Shipped" },
-  { value: "6", label: "Companies" },
-  { value: "∞", label: "Lines of Code" },
+  { value: String(projects.length), label: "Projects Shipped" },
+  { value: String(experience.length), label: "Companies" },
 ];
